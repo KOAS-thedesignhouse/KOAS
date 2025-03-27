@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koa's Design House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Koa's Design House</h1>
+            <nav>
+                <a href="#products">Products</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Unique Designs, Crafted with Passion.</h2>
+            <p>Discover our exclusive collection of handcrafted home decor and accessories.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="product1.jpg" alt="Handmade Vase">
+                    <h3>Handmade Vase</h3>
+                    <p>$29.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Decorative Pillow">
+                    <h3>Decorative Pillow</h3>
+                    <p>$39.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product3.jpg" alt="Wooden Lamp">
+                    <h3>Wooden Lamp</h3>
+                    <p>$49.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product4.jpg" alt="Ceramic Mug">
+                    <h3>Ceramic Mug</h3>
+                    <p>$19.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Koa's Design House is dedicated to creating unique and high-quality handcrafted products. We believe in sustainable practices and supporting local artisans. Our passion for design drives us to bring you beautiful and functional items for your home.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have any questions or inquiries? Feel free to reach out to us.</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Koa's Design House. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Basic Cart Logic (Expand as needed)
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Item added to cart!'); // Replace with actual cart functionality
+            });
+        });
+    </script>
+</body>
+</html>
